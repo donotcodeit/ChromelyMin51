@@ -1,0 +1,83 @@
+html,
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    cursor: move;
+    position: relative;
+    height: 38px;
+    width: 100%;
+    overflow: hidden;
+    background: #f0f8ff;
+    box-shadow: 0 4px 2px -2px #f0f8ff;
+}
+
+.navbar .title {
+    width: 100%;
+    height: 100%;
+    line-height: 38px;
+    font-weight: 500;
+    padding-left: 14px;
+}
+
+.navbar .controls {
+    display: grid;
+    grid-template-columns: repeat(3, 46px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-family: "Segoe MDL2 Assets";
+    font-size: 10px;
+}
+
+.navbar .controls .button {
+    user-select: none;
+    cursor: pointer;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #bbb;
+}
+
+#min-button {
+    grid-column: 1;
+}
+
+#max-button,
+#restore-button {
+    grid-column: 2;
+}
+
+#restore-button {
+    display: none;
+}
+
+#close-button {
+    grid-column: 3;
+}
+
+#min-button:hover {
+    background: #f0f0f0;
+}
+
+#max-button:hover {
+    background: #f0f0f0;
+}
+
+#restore-button:hover {
+    background: #f0f0f0;
+}
+
+#close-button:hover {
+    background: #e81123;
+}

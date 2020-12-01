@@ -1,0 +1,3 @@
+[submodule "submodule/Chromely"]
+	path = submodule/Chromely
+	url = https://github.com/chromelyapps/Chromely
