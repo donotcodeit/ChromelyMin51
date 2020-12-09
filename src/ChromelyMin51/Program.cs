@@ -36,7 +36,7 @@ namespace ChromelyMin51
         }
     }
 
-    public class App : ChromelyFramelessApp
+    public class App : ChromelyBasicApp
     {
         public override void ConfigureServices(IServiceCollection services)
         {
